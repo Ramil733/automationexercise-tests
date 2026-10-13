@@ -1,0 +1,41 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/createAccount'
+order: 5000
+body:
+  type: urlencoded
+  content:
+    - key: name
+      value: Test User
+    - key: email
+      value: '{{email}}'
+    - key: password
+      value: '{{password}}'
+    - key: title
+      value: Mr
+    - key: birth_date
+      value: '15'
+    - key: birth_month
+      value: '6'
+    - key: birth_year
+      value: '1995'
+    - key: firstname
+      value: Test
+    - key: lastname
+      value: User
+    - key: company
+      value: TestCo
+    - key: address1
+      value: 123 Test St
+    - key: address2
+      value: Apt 4
+    - key: country
+      value: United States
+    - key: zipcode
+      value: '12345'
+    - key: state
+      value: California
+    - key: city
+      value: Los Angeles
+    - key: mobile_number
+      value: '1234567890'

@@ -1,0 +1,7 @@
+$kind: http-request
+method: GET
+url: '{{baseUrl}}/getUserDetailByEmail?email={{email}}'
+order: 8000
+queryParams:
+  - key: email
+    value: '{{email}}'

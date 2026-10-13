@@ -1,0 +1,11 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/verifyLogin'
+order: 1000
+body:
+  type: urlencoded
+  content:
+    - key: email
+      value: '{{email}}'
+    - key: password
+      value: '{{password}}'

@@ -1,0 +1,11 @@
+$kind: http-request
+method: DELETE
+url: '{{baseUrl}}/deleteAccount'
+order: 6000
+body:
+  type: urlencoded
+  content:
+    - key: email
+      value: '{{email}}'
+    - key: password
+      value: '{{password}}'

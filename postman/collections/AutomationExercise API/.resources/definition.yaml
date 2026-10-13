@@ -1,0 +1,6 @@
+$kind: collection
+name: AutomationExercise API
+description: API collection for automationexercise.com covering Products, Brands, and User endpoints.
+variables:
+  - key: baseUrl
+    value: 'https://automationexercise.com/api'

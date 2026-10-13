@@ -1,0 +1,9 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/searchProduct'
+order: 3000
+body:
+  type: urlencoded
+  content:
+    - key: search_product
+      value: Blue Top

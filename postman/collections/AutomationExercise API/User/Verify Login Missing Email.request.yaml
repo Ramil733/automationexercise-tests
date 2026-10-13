@@ -1,0 +1,9 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/verifyLogin'
+order: 2000
+body:
+  type: urlencoded
+  content:
+    - key: password
+      value: password123

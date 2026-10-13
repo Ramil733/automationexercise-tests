@@ -1,0 +1,4 @@
+$kind: http-request
+method: POST
+url: '{{baseUrl}}/searchProduct'
+order: 4000
