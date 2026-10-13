@@ -5,3 +5,6 @@ class BrandsApi(BaseApi):
 
     def get_all_brands(self):
         return self.get("/brandsList")
+
+    def put_brands(self):
+        return self.put("/brandsList")

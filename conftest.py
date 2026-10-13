@@ -6,4 +6,5 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 pytest_plugins = [
     "fixtures.pages",
+    "fixtures.users"
 ]

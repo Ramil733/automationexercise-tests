@@ -9,6 +9,9 @@ class UserApi(BaseApi):
     def create_account(self, user_data: dict):
         return self.post("/createAccount", data=user_data)
 
+    def update_account(self, user_data: dict):
+        return self.put("/updateAccount", data=user_data)
+
     def delete_account(self, email: str, password: str):
         return self.delete("/deleteAccount", data={"email": email, "password": password})
 
