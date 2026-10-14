@@ -6,7 +6,7 @@ class BasePage:
         self.page = page
 
     def navigate_to(self, url: str):
-        self.page.goto(url)
+        self.page.goto(url, wait_until="domcontentloaded")
         return self
 
     def get_title(self) -> str:

@@ -4,3 +4,4 @@ playwright
 requests
 allure-pytest
 faker
+pytest-rerunfailures

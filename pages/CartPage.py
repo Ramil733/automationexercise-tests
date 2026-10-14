@@ -7,6 +7,9 @@ class CartPage(BasePage):
 
     CART_ROWS = "#cart_info_table tbody tr"
     EMPTY_CART = "#empty_cart"
+    SUBSCRIPTION_EMAIL = "#susbscribe_email"
+    SUBSCRIPTION_BUTTON = "#subscribe"
+    SUBSCRIPTION_SUCCESS = ".alert-success"
 
     def open(self):
         self.navigate_to(self.URL)
@@ -18,4 +21,13 @@ class CartPage(BasePage):
 
     def expect_empty(self):
         expect(self.page.locator(self.EMPTY_CART)).to_be_visible()
+        return self
+
+    def subscribe(self, email: str):
+        self.page.fill(self.SUBSCRIPTION_EMAIL, email)
+        self.page.click(self.SUBSCRIPTION_BUTTON)
+        return self
+
+    def expect_subscription_success(self):
+        expect(self.page.locator(self.SUBSCRIPTION_SUCCESS)).to_be_visible()
         return self

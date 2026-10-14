@@ -4,6 +4,8 @@ from pages.ProductPage import ProductPage
 from pages.CartPage import CartPage
 from pages.LoginPage import LoginPage
 from pages.SignupPage import SignupPage
+from pages.CheckoutPage import CheckoutPage
+from pages.ContactUsPage import ContactUsPage
 
 
 @pytest.fixture
@@ -20,6 +22,7 @@ def products_page(page):
 def cart_page(page):
     return CartPage(page)
 
+
 @pytest.fixture
 def login_page(page):
     return LoginPage(page)
@@ -28,3 +31,13 @@ def login_page(page):
 @pytest.fixture
 def signup_page(page):
     return SignupPage(page)
+
+
+@pytest.fixture
+def checkout_page(page):
+    return CheckoutPage(page)
+
+
+@pytest.fixture
+def contact_page(page):
+    return ContactUsPage(page)
